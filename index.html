@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Официален сайт на агенция за недвижими имоти Вашия дом е тук!">
+  <meta name="keywords" content="недвижими имоти, продажби, наеми, агенция">
+  <meta name="author" content="Стелла Желева">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <title>Вашия дом е тук! ЕОД | Начало</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="leftnav">
+          <a href="images/logo.png">
+            <img src="images/logo.png" alt="Logo" class="logo"/>
+          </a>
+        </div>
+      </div>
+      <div class="navigati">
+        <ul class="menu">
+          <li><a href="index.html" class="active">Начало</a></li>
+          <li><a href="about.html">За нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade cover">
+        <img src="images/nachalo.png" class="coverimg" alt="начало">
+        <div class="textoncover">
+          <blockquote>Ние сбъдваме вашите мечти, а кой сме ние?</blockquote>
+          <a href="about.html" class="button">Запознайте се с нас!</a>
+        </div>
+      </div>
+      <div class="mySlides fade cover">
+        <img src="images/nachalo2.png" class="coverimg" alt="начало2">
+        <div class="textoncover">
+          <blockquote>Услугата е малка стъпка към сбъднатата мечта!</blockquote>
+          <a href="services.html" class="button">Услуги</a>
+          <p class="company-name">"Вашия дом е тук! ЕОД"</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="hsize">
+    <h2><img src="images/bullet10.png" width="16" height="16" alt="" class="bullet-2" /> За нас</h2>
+    <hr class="hr-short"/>
+  </div>
+  <div class="about-link">
+    <a href="about.html">
+      <img src="images/za nas.png" alt="За нас" class="about-img"/>
+      <div class="about-text">
+        <p><strong>"Вашия дом е тук!"ЕООД е лидер в сферата на недвижимите имоти и предлага пълна гама от услуги, свързани с покупка, продажба и наем на имоти. С над 10 години опит на пазара, ние сме изградили доверие сред клиентите си, предлагайки персонализирани решения и професионализъм. С нашия екип от експерти, винаги сте в добри ръце, когато става въпрос за избора на вашето ново жилище или търговски имот.</p>
+      </div>
+    </a>
+  </div>
+
+  <section id="uslugi">
+    <h2 class="centered-heading">Услуги</h2>
+    <hr class="hr-short">
+
+    <div class="service">
+      <img src="images/kushtapodnaem.png" alt="Къща под наем" class="service-img">
+      <div class="service-details">
+        <h3>Отдава се голяма къща под наем: 3500 евро</h3>
+        <p>260 квадратни метра, намира се в град Варна</p>
+        <a href="info-podnaem.html" class="button">Повече информация</a>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="service-details">
+        <h3>Продава се апартамент: 90 000 евро</h3>
+        <p>60 квадратни метра, намира се в град Варна</p>
+        <a href="info-prodava.html" class="button">Повече информация</a>
+      </div>
+      <img src="images/prodajba.png" alt="Апартамент за продажба" class="service-img">
+    </div>
+  </section>
+
+  <!-- Нов ред -->
+  <div class="parallax">
+    <div class="success"><span class="count">20</span><br>
+      <span class="counttext">годишна история</span></div>
+    <div class="success"> <span class="count">638</span><br>
+      <span class="counttext">реализирани проекти</span> </div>
+    <div class="success"> <span class="count">212</span><br>
+      <span class="counttext">доволни клиенти</span> </div>
+  </div>
+
+  <!-- Контактна секция и разделителна лента -->
+  <div class="footer">
+    <p class="footerp">Контакт с нас</p>
+    <hr class="hr-long"/>
+    <address>
+      <span class="icon icon-primary icon-sm mercury-icon-globe-marker"></span>гр. Варна, ул. "Брегалница" 15<br> 
+      <span class="icon icon-primary icon-sm mercury-icon-envelope"></span> office@vashiqdom.com<br> 
+      <span class="icon icon-primary icon-sm mercury-icon-phone"></span>+359 89 5458595 
+    </address>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    setInterval(showSlides, 5000);
+
+    showSlides();
+  </script>
+</body>
+</html>
